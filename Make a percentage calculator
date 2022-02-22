@@ -1,0 +1,30 @@
+package com.code;
+
+import java.util.Scanner;
+
+public class day4 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter marks of Physics");
+        float Physics = sc.nextFloat();
+        System.out.println("Enter your Chemistry marks");
+        float Chemistry = sc.nextFloat();
+        System.out.println("Enter your Math marks");
+        float Math = sc.nextFloat();
+        System.out.println("Enter your Biology marks");
+        float Biology = sc.nextFloat();
+        System.out.println("Enter your English marks");
+        float English = sc.nextFloat();
+
+        float Total = Physics + Chemistry + Math + Biology + English;
+        System.out.println("Total marks = " +Total);
+
+        float Percentage = Total/5;
+        System.out.println("Your percentage " +Percentage);
+
+
+
+    }
+}
