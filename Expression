@@ -1,0 +1,48 @@
+package com.code;
+import java.util.Scanner;
+
+public class day5 {
+    public static void main(String[] args) {
+        //Write a program to encrypt a grade by adding 8 to it.
+        //Decrypt it to show a correct grade
+
+        char grade = 'C';
+        grade = (char) (grade + 8);
+        System.out.println(grade);
+
+        grade = (char) (grade - 8);
+        System.out.println(grade);
+
+        //Write comparison operators to find out whether a given number is greater
+        //than the user entered number or not
+
+        System.out.println("Enter a number");
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        System.out.println(x>8);
+
+        // Write a expression
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a");
+        int a= scan.nextInt();
+
+        System.out.println("Enter v");
+        int v= scan.nextInt();
+
+        System.out.println("Enter u");
+        int u= scan.nextInt();
+
+        System.out.println("Enter s");
+        int s= scan.nextInt();
+
+        int k = (v*v - u*u) / 2*a*s;
+        System.out.println(k);
+
+        int z = 7+49/7+35/7;
+        System.out.println(z);
+
+
+
+    }
+}
