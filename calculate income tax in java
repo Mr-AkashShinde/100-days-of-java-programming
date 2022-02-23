@@ -1,0 +1,29 @@
+package com.code;
+import java.util.Scanner;
+
+public class conditionals {
+    public static void main(String[] args) {
+        int tax;
+        int income;
+        
+        System.out.println("Enter your income: ");
+        Scanner sc1 = new Scanner(System.in);
+        income = sc1.nextInt();
+
+        if(income>250000 && income<500000){
+            tax = income*5/100;
+            System.out.println("tax to pay is: " +tax);
+        }
+        else if (income>500000 && income<1000000){
+            tax = income*20/100;
+            System.out.println("tax to pay is: "+tax);
+        }
+        else if (income>1000000){
+            tax = income*30/100;
+            System.out.println("tax to pay is: "+tax);
+        }
+        else {
+            System.out.println("you do not need to pay any tax");
+        }
+    }
+ }   
