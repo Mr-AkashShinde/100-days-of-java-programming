@@ -1,0 +1,35 @@
+package com.code;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Rock_Paper_Scissors_game {
+    public static void main(String[] args) {
+
+        System.out.println("Game starts now");
+        System.out.println("1:Rock, 2:Paper, 3:Scissor");
+        System.out.println("Enter input between 1 to 3 to start the game");
+
+        Scanner scan = new Scanner(System.in);
+        int user_input = scan.nextInt();
+
+        Random random = new Random();
+        int computer_input = random.nextInt(3);
+
+        if (user_input == computer_input)
+        {
+            System.out.println("It's a Draw");
+        }
+        else if (user_input==1 && computer_input==3 || user_input==2 && computer_input==1 ||
+                user_input==3 && computer_input==2)
+        {
+            System.out.println("That's great you win");
+        }
+        else {
+            System.out.println("Ooops, you lost");
+        }
+
+
+
+    }
+}
